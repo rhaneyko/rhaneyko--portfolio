@@ -1,3 +1,63 @@
-.Container{
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 50vh;
+    gap: 20px;
+
     background-color: red;
-}
+  }
+  
+  .greetings {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .greetings__text {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  .greetings__role {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .buttons__cv,
+  .buttons__linkedin {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .buttons__cv {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .buttons__linkedin {
+    background-color: #0073b1;
+    color: #fff;
+  }
+  
+  .profile {
+    margin-top: 20px;
+  }
+  
+  .profile__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  

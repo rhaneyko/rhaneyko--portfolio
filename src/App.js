@@ -4,6 +4,7 @@ import './App.css'
 
 import Header from "./components/Header";
 import HomePage from "./components/Pages/HomePage";
+import SkillsPage from "./components/Pages/SkillsPage";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <Header />
       <HomePage />
+      <SkillsPage/>
     </div>
   );
 }

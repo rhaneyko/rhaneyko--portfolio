@@ -4,10 +4,8 @@
     justify-content: space-around;
     align-items: center;
 
-    height: 50vh;
+    height: 60vh;
     gap: 20px;
-
-    background-color: red;
   }
   
   .greetings {
@@ -16,19 +14,22 @@
   }
   
   .greetings__text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 5px 0;
   }
   
   .greetings__role {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: #007bff;
+    margin: 30px 0 0;
+    color: #4caf50;
   }
   
   .buttons {
     display: flex;
-    gap: 15px;
+    gap: 30px;
+
+    margin: 30px 0;
   }
   
   .buttons__cv,
@@ -43,6 +44,7 @@
   .buttons__cv {
     background-color: #4caf50;
     color: #fff;
+    text-decoration: none;
   }
   
   .buttons__linkedin {
@@ -55,8 +57,8 @@
   }
   
   .profile__image {
-    width: 150px;
-    height: 150px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     object-fit: cover;
   }

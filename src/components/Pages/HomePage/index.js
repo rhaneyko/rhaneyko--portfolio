@@ -17,7 +17,7 @@ const HomePage = () => {
 
         <div className="buttons">
           <a href={cvRhaneyko} download="cvRhaneyko" className="buttons__cv">
-            DownloadCV
+            Download CV
           </a>
 
           <button className="buttons__linkedin" onClick={openLinkedin}>

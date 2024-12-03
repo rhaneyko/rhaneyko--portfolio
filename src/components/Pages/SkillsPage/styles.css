@@ -1,7 +1,7 @@
 .container__skills {
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: auto;
     margin: 0 auto;
     padding: 20px;
 
@@ -18,8 +18,11 @@
 .skills__list {
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    gap: 15px;
+    gap: 20px;
+
+    padding: 20px;
 
     background-color: #212121;
 }
@@ -27,9 +30,12 @@
 .skills__item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     
-    width: 150px;
-    height: 250px;
+    width: auto;
+    height: auto;
+
+    margin: 0 0 20px;
     
     color: #535353;
     border-radius: 4px;
@@ -43,8 +49,12 @@
 }
 
 .skills__item__img{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
 
     padding: 20px 0 0 0;
+}
+
+.skills__item__name{
+    margin: 8px 0;
 }

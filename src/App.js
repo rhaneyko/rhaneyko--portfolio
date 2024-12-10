@@ -7,7 +7,6 @@ import HomePage from "./components/Pages/HomePage";
 import SkillsPage from "./components/Pages/SkillsPage";
 import ProjectsPage from "./components/Pages/ProjectsPage";
 import ContactPage from "./components/Pages/ContactPage";
-import './App.css'
 
 function App() {
   return (

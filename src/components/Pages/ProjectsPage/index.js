@@ -21,7 +21,7 @@ const ProjectsPage = () => {
     <div className="container__projectspage">
       <h1>ProjectsPage</h1>
 
-     
+      <div className="project__card"></div>
     </div>
   );
 };

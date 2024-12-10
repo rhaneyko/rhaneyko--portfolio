@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 import "./styles.css";
-import Carousel from "react-elastic-carousel";
+//import Carousel from "react-elastic-carousel";
+import projectsData from '../../Assets/Data/projectsData.json'
 
 const ProjectsPage = () => {
   const itemsPerPage = 1;
@@ -10,24 +11,17 @@ const ProjectsPage = () => {
   const totalPages = Math.ceil(items.length / itemsPerPage);
   let resetTimeout;
 
+  const [projets, setProjets] = useState(projectsData)
+
+
+
   return (
+    
+
     <div className="container__projectspage">
       <h1>ProjectsPage</h1>
 
-      <Carousel
-        ref={ref}
-        enableAutoPlay
-        autoPlaySpeed={5000}
-        onNextEnd={({ index }) => {
-          clearTimeout(resetTimeout);
-          if (index + 1 === totalPages) {
-            resetTimeout = setTimeout(() => {
-              ref.current.goTo(0);
-            }, 5000);
-          }
-        }}
-        sitemsToShow={itemsPerPage}
-      ></Carousel>
+     
     </div>
   );
 };

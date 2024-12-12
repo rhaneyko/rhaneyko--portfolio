@@ -1,10 +1,7 @@
-.container__contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+h1{
 
+    align-self: center;
+}
 /* ///// inputs /////*/
 
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {

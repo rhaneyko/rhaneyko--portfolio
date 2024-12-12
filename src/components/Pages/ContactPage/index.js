@@ -1,34 +1,22 @@
 import React from "react";
 
-import "./styles.css";
+import "./styles.css"
 
 const ContactPage = () => {
-  return (
-    <div class="row">
-      <h1>Contato</h1>
+    return (
+       <div className="container__contactPage">
+        <h1>Contato</h1>
+        <form>
+            <label for="name">Nome</label>
+            <input type="text" placeholder="Digite seu nome"/>
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail"/>
+            
+            <textarea placeholder="Digite sua mensagem..."/>
+        </form>
+       </div>
 
-      <div class="row input-container">
-        <div class="styled-input wide">
-          <input type="text" required />
-          <label>Name</label>
-        </div>
-
-        <div class="styled-input">
-          <input type="text" required />
-          <label>Email</label>
-        </div>
-
-        <div class="styled-input">
-          <input type="text" required />
-          <label>Phone Number</label>
-        </div>
-        <div class="styled-input wide">
-          <textarea required></textarea>
-          <label>Message</label>
-        </div>
-      </div>
-    </div>
-  );
-};
+    )
+}
 
 export default ContactPage;

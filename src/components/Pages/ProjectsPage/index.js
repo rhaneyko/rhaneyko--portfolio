@@ -8,7 +8,7 @@ const ProjectsPage = () => {
   const [projets, setProjets] = useState(projectsData);
 
   return (
-    <div className="container__projectspage">
+    <div className="container__projectspage" id="projects">
       <h1>ProjectsPage</h1>
       <div className="card__list">
         <div className="project__card"></div>

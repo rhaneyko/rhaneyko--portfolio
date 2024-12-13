@@ -9,7 +9,7 @@ import "./styles.css";
 
 const SkillsPage = () => {
   return (
-    <div className="container__skills">
+    <div className="container__skills" id="skills">
       <h1 className="skills__title">Skills</h1>
       <div className="skills__list">
         <div className="skills__item">

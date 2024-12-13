@@ -4,13 +4,17 @@
     justify-content: space-around;
     align-items: center;
 
-    height: 60vh;
+    height: 65vh;
     gap: 20px;
+    
+    
+    background-color: red;
   }
   
   .greetings {
     display: flex;
     flex-direction: column;
+
   }
   
   .greetings__text {

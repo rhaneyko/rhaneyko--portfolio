@@ -9,7 +9,7 @@ const HomePage = () => {
     window.open("https://www.linkedin.com/in/rhaneyko-honorio-73657819b/");
   };
   return (
-    <div className="container__homepage">
+    <div className="container__homepage" id="home">
       <div className="greetings">
         <span className="greetings__text">Olá,</span>
         <span className="greetings__text">Me chamo Rhaneyko.</span>

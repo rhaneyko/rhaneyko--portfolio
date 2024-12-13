@@ -4,7 +4,7 @@ import "./styles.css"
 
 const ContactPage = () => {
     return (
-       <div className="container__contactPage">
+       <div className="container__contactPage" id="contact">
         <h1>Contato</h1>
         <form>
             <label for="name">Nome</label>

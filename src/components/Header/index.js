@@ -1,27 +1,36 @@
 import React from "react";
 
+import { BrowserRouter as Router } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
+
 import "./styles.css";
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo">
-        <p>logo</p>
-      </div>
-      <nav>
-        <ul className="nav-links">
-          <li>
-            <a href="#home">HOME</a>
-          </li>
-          <li>
-            <a href="#skills">SKILLS</a>
-          </li>
-          <li>
-            <a href="#projects">PROJETOS</a>
-          </li>
-        </ul>
-      </nav>
-      <button className="contact-button">Contato</button>
+      <Router>
+        <div className="nav-links">
+
+        <div className="logo" smooth to="#home">
+          <p>logo</p>
+        </div>
+          <ul>
+            <NavHashLink smooth to="#home">
+              HOME
+            </NavHashLink>
+            <NavHashLink smooth to="#skills">
+              SKILLS
+            </NavHashLink>
+            <NavHashLink smooth to="#projects" >
+              PROJETOS
+            </NavHashLink>
+            <NavHashLink smooth to="#contact">
+              CONTATOS
+            </NavHashLink>
+          </ul>
+        <button className="contact-button">Contato</button>
+        </div>
+      </Router>
     </header>
   );
 };

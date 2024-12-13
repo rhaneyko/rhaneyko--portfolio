@@ -4,16 +4,16 @@
     justify-content: space-around;
     align-items: center;
 
-    height: 65vh;
+    height: 75vh;
     gap: 20px;
-    
-    
-    background-color: red;
+
   }
   
   .greetings {
     display: flex;
     flex-direction: column;
+
+    width: auto;
 
   }
   
@@ -59,7 +59,7 @@
   }
   
   .profile {
-    margin-top: 20px;
+  
   }
   
   .profile__image {

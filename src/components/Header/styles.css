@@ -9,9 +9,9 @@
   background-color: #171717;
 
   color: white;
-  -webkit-box-shadow: -1px -16.5px 12.5px 19.5px #5E5D5D;
-  -moz-box-shadow: -1px -16.5px 12.5px 19.5px #5E5D5D;
-  box-shadow: -1px -16.5px 12.5px 19.5px #5E5D5D;
+  -webkit-box-shadow: -1px -16.5px 12.5px 19.5px #363636;
+  -moz-box-shadow: -1px -16.5px 12.5px 19.5px #363636;
+  box-shadow: -1px -16.5px 12.5px 19.5px #363636;
 
   z-index: 2;
   position: fixed;

@@ -48,11 +48,12 @@ ul a:hover {
   padding: 10px 20px;
   background-color: #27AE60;
   border: none;
+  border-radius: 1em;
   color: #000;
   font-size: 16px;
   cursor: pointer;
 }
 
 .contact-button:hover {
-  background-color: #60a37c;
+    transform: translateY(1px);
 }

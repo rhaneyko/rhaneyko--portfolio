@@ -9,7 +9,7 @@ const ProjectsPage = () => {
 
   return (
     <div className="container__projectspage" id="projects">
-      <h1>ProjectsPage</h1>
+      <h1 className="project__title">ProjectsPage</h1>
       <div className="card__list">
         <div className="project__card"></div>
         <div className="project__card"></div>

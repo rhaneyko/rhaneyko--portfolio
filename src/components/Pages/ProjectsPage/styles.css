@@ -7,7 +7,9 @@
 
   padding: 20px;
 
-  h1 {
+  .project__title{
+    font-size: 1.7rem;
+    text-align: center;
     color: #FFF;
     margin: 50px 0;
   }

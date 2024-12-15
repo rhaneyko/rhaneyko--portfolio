@@ -17,9 +17,7 @@ const Header = () => {
     <header className="header">
       <Router>
         <div className="nav-links">
-          <div className="logo" smooth to="#home">
-            <p>logo</p>
-          </div>
+          
           <ul>
             <NavHashLink smooth to="#home" scroll={scrollWithOffset}>
               HOME
@@ -34,8 +32,8 @@ const Header = () => {
               CONTATOS
             </NavHashLink>
           </ul>
-          <NavHashLink className="contact-button" smooth to="#contact">Contato</NavHashLink>
         </div>
+          <NavHashLink className="contact-button" smooth to="#contact">Contato</NavHashLink>
       </Router>
     </header>
   );

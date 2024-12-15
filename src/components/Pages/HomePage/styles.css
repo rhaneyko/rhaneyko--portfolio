@@ -1,71 +1,84 @@
 .container__homepage {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 
-    height: 75vh;
-    gap: 20px;
+  height: 75vh;
+  gap: 20px;
 
-  }
-  
-  .greetings {
-    display: flex;
-    flex-direction: column;
+}
 
-    width: auto;
+.greetings {
+  display: flex;
+  flex-direction: column;
 
-  }
-  
-  .greetings__text {
-    font-size: 1.5rem;
-    margin: 5px 0;
+  width: auto;
 
-    color: #FFF;
-  }
-  
-  .greetings__role {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 30px 0 0;
-    color: #4CAF50;
-  }
-  
-  .buttons {
-    display: flex;
-    gap: 30px;
+}
 
-    margin: 30px 0;
-  }
-  
-  .buttons__cv,
-  .buttons__linkedin {
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .buttons__cv {
-    background-color: #4CAF50;
-    color: #FFF;
-    text-decoration: none;
-  }
-  
-  .buttons__linkedin {
-    background-color: #0073B1;
-    color: #FFF;
-  }
-  
-  .profile {
-    margin-top: 4em;
-  }
-  
-  .profile__image {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
+.greetings__text {
+  font-size: 1.5rem;
+  margin: 5px 0;
+
+  color: #FFF;
+}
+
+.greetings__role {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 30px 0 0;
+  color: #4CAF50;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+
+  margin: 30px 0;
+}
+
+.buttons__cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 50px;
+  width: 150px;
+
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.buttons__cv {
+  background-color: #4CAF50;
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+.linkedin__icon {
+
+  color: #0073B1;
+  height: 50px;
+  width: 50px;
+}
+
+.github__icon {
+  color: #F0F6FC;
+  height: 50px;
+  width: 50px;
+}
+
+.profile {
+  margin-top: 4em;
+}
+
+.profile__image {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+}

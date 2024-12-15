@@ -11,16 +11,14 @@ const ContactPage = () => {
           <input type="text" required />
           <label>Nome</label>
         </div>
-
+       
         <div className="styled__input">
           <input type="text" required />
           <label>E-mail</label>
         </div>
-        <div>
-          <div className="styled__input">
-            <input type="text" required />
-            <label>Telefone</label>
-          </div>
+        <div className="styled__input">
+          <input type="text" required />
+          <label>Telefone</label>
         </div>
 
         <div class="styled__input wide">

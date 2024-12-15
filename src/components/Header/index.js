@@ -34,7 +34,7 @@ const Header = () => {
               CONTATOS
             </NavHashLink>
           </ul>
-          <button className="contact-button">Contato</button>
+          <NavHashLink className="contact-button" smooth to="#contact">Contato</NavHashLink>
         </div>
       </Router>
     </header>

@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
     margin: 0 auto;
     padding: 20px;
 }
@@ -19,52 +19,109 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
-
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    width: 100%; /* Garante que a lista ocupe a largura disponível */
     gap: 20px;
-
     padding: 20px;
-
     background-color: #212121;
+    border-radius: 8px; /* Adiciona bordas arredondadas */
 }
 
 .skills__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    width: auto;
+    align-items: center;
+    width: 130px;
     height: auto;
-
     margin: 0 0 20px;
-
-    
     border-radius: 4px;
     text-align: center;
     font-weight: bold;
-    transition: transform 0.2s;
-
+    transition: transform 0.2s ease;
     background-color: #212121;
-
 }
 
 .skills__item:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Efeito de hover */
 }
 
 .skills__item__img {
-    width: 130px;
-    height: 130px;
-
-    padding: 20px 0 0 0;
-
+    width: 100px;
+    height: 100px;
+    padding: 10px 0 0 0;
     background: none;
 }
 
 .skills__item__name {
     margin: 8px 0;
-
     color: #535353;
-    
     background: none;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .skills__list {
+        gap: 15px; /* Reduz o espaçamento entre itens */
+    }
+
+    .skills__item {
+        width: 110px;
+    }
+
+    .skills__item__img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .skills__item__name {
+        font-size: 0.9rem; /* Texto menor em dispositivos menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .skills__title {
+        font-size: 1.5rem;
+    }
+
+    .skills__list {
+        gap: 10px; /* Espaçamento reduzido */
+    }
+
+    .skills__item {
+        width: 100px;
+    }
+
+    .skills__item__img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skills__item__name {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills__title {
+        font-size: 1.3rem;
+    }
+
+    .skills__list {
+        gap: 8px;
+        padding: 15px;
+    }
+
+    .skills__item {
+        width: 90px;
+    }
+
+    .skills__item__img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .skills__item__name {
+        font-size: 0.8rem;
+    }
 }

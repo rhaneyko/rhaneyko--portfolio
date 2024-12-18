@@ -1,42 +1,49 @@
-import React from "react";
+import React, { useState } from 'react';
+import { NavHashLink } from 'react-router-hash-link';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import { BrowserRouter as Router } from "react-router-dom";
-import { NavHashLink } from "react-router-hash-link";
+import './styles.css'
 
-import "./styles.css";
+export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-const scrollWithOffset = (el) => {
-  const yOffset = -70;
-  const yCoordinate =
-    el.getBoundingClientRect().top + window.scrollY + yOffset;
-  window.scrollTo({ top: yCoordinate, behavior: "smooth" });
-};
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-const Header = () => {
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <Router>
-        <div className="nav-links">
-          
-          <ul>
-            <NavHashLink smooth to="#home" scroll={scrollWithOffset}>
-              HOME
-            </NavHashLink>
-            <NavHashLink smooth to="#skills" scroll={scrollWithOffset}>
-              SKILLS
-            </NavHashLink>
-            <NavHashLink smooth to="#projects" scroll={scrollWithOffset}>
-              PROJETOS
-            </NavHashLink>
-            <NavHashLink smooth to="#contact" scroll={scrollWithOffset}>
-              CONTATOS
-            </NavHashLink>
-          </ul>
+        <div className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-          <NavHashLink className="contact-button" smooth to="#contact">Contato</NavHashLink>
+
+        <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
+          <ul onClick={closeMenu}>
+            <li>
+              <NavHashLink smooth to="#home">HOME</NavHashLink>
+            </li>
+            <li>
+              <NavHashLink smooth to="#skills">SKILLS</NavHashLink>
+            </li>
+            <li>
+              <NavHashLink smooth to="#projects">PROJETOS</NavHashLink>
+            </li>
+            <li>
+              <NavHashLink smooth to="#contact">CONTATOS</NavHashLink>
+            </li>
+          </ul>
+          <NavHashLink className="contact-button" smooth to="#contact" onClick={closeMenu}>
+            Contato
+          </NavHashLink>
+        </nav>
       </Router>
     </header>
   );
-};
-
-export default Header;
+}

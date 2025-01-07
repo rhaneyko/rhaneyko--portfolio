@@ -11,6 +11,10 @@ const HomePage = () => {
   const openLinkedin = () => {
     window.open("https://www.linkedin.com/in/rhaneyko-honorio-73657819b/");
   };
+
+  const openGithub = () => {
+    window.open("https://github.com/rhaneyko");
+  };
   return (
     <div className="container__homepage" id="home">
       <div className="greetings">
@@ -23,8 +27,8 @@ const HomePage = () => {
             Download CV
           </a>
 
-          <FaLinkedin className="linkedin__icon"/>
-          <FaGithub className="github__icon"/>
+          <FaLinkedin className="linkedin__icon" onClick={openLinkedin} />
+          <FaGithub className="github__icon" onClick={openGithub} />
         </div>
       </div>
 

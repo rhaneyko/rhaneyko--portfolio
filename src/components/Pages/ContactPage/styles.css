@@ -54,7 +54,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-    outline: 2px solid #27AE60;
+    outline: 2px solid #2D2D2D;
 }
 
 input:focus~label,
@@ -85,7 +85,6 @@ textarea {
     color: #000;
     font-size: 1rem;
     cursor: pointer;
-    text-align: center;
     transition: transform 0.2s ease;
 }
 

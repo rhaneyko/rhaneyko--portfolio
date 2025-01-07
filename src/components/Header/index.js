@@ -24,24 +24,25 @@ export default function Header() {
           <span></span>
         </div>
 
+
+        <div className="logo">
+          <NavHashLink smooth to="#home">Rhaneyko</NavHashLink>
+        </div>
         <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <ul onClick={closeMenu}>
             <li>
-              <NavHashLink smooth to="#home">HOME</NavHashLink>
+              <NavHashLink smooth to="#home">Início</NavHashLink>
             </li>
             <li>
-              <NavHashLink smooth to="#skills">SKILLS</NavHashLink>
+              <NavHashLink smooth to="#skills">Habilidades</NavHashLink>
             </li>
             <li>
-              <NavHashLink smooth to="#projects">PROJETOS</NavHashLink>
+              <NavHashLink smooth to="#projects">Projetos</NavHashLink>
             </li>
             <li>
-              <NavHashLink smooth to="#contact">CONTATOS</NavHashLink>
+              <NavHashLink smooth to="#contact">Contatos</NavHashLink>
             </li>
           </ul>
-          <NavHashLink className="contact-button" smooth to="#contact" onClick={closeMenu}>
-            Contato
-          </NavHashLink>
         </nav>
       </Router>
     </header>

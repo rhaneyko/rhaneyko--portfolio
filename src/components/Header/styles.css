@@ -1,7 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 10px 20px;
   background-color: #171717;
@@ -12,15 +11,18 @@
   top: 0;
 }
 
-.logo {
-  font-size: 24px;
+.logo a{
+  font-family: "Julee", serif;
+  font-size: 2rem;
   font-weight: bold;
+  color: #27AE60;
+  text-decoration: none;
+  margin: 40px;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 15px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -36,8 +38,10 @@
 }
 
 .nav-links ul a {
+  
   text-decoration: none;
   color: #5E5D5D;
+  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   font-size: 1rem;
   margin: 0.625em;
@@ -48,25 +52,7 @@
   color: #FFF;
 }
 
-.contact-button {
-  padding: 10px 20px;
-  background-color: #27AE60;
-  border: none;
-  border-radius: 1em;
-  color: #000;
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.2s ease, background-color 0.3s ease;
-}
 
-.contact-button:hover {
-  transform: translateY(1px);
-  background-color: #1E904F;
-}
-
-/* Menu Toggle (Hambúrguer) */
 .menu-toggle {
   display: none;
   flex-direction: column;

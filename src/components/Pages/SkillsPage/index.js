@@ -1,33 +1,30 @@
-import React from "react";
-
-import HtmlImg from "../../Assets/Images/html.png";
-import CssImg from "../../Assets/Images/css.png";
-import JsImg from "../../Assets/Images/JavaScript.png";
-import ReactImg from "../../Assets/Images/React.png";
-
+import React, { useEffect, useState } from "react";
 import "./styles.css";
 
+import  SkillData  from "../../Assets/Data/skillData.json";
+
 const SkillsPage = () => {
+  const [skills, setSkills] = useState([]);
+
+  useEffect(() => {
+    setSkills(SkillData);
+  });
+
   return (
-    <div className="container__skills" id="skills">
+    <div className="container-skills" id="skills">
       <h1 className="skills__title">Skills</h1>
       <div className="skills__list">
-        <div className="skills__item">
-          <img src={HtmlImg} className="skills__item__img" alt="HTML Icon" />
-          <span className="skills__item__name">HTML</span>
-        </div>
-        <div className="skills__item">
-          <img src={CssImg} className="skills__item__img" alt="CSS Icon" />
-          <span className="skills__item__name">CSS</span>
-        </div>
-        <div className="skills__item">
-          <img src={JsImg} className="skills__item__img" alt="JavaScript Icon" />
-          <span className="skills__item__name">JAVASCRIPT</span>
-        </div>
-        <div className="skills__item">
-          <img src={ReactImg} className="skills__item__img" alt="React Icon" />
-          <span className="skills__item__name">REACT</span>
-        </div>
+        {skills.map((skill) => (
+            <div className="skills__item" key={skill.id}>
+              <span className="skills__item__name">{skill.title}</span>
+            </div>
+          ))}
+        <a
+          href="https://www.linkedin.com/in/rhaneyko-honorio-73657819b/details/certifications/"
+          className="skills-certifications"
+        >
+          Ver certificações
+        </a>
       </div>
     </div>
   );

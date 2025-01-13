@@ -9,7 +9,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const HomePage = () => {
   const openLinkedin = () => {
-    window.open("https://www.linkedin.com/in/rhaneyko-honorio-73657819b/");
+    window.open("https://www.linkedin.com/in/rhaneyko");
   };
 
   const openGithub = () => {

@@ -12,11 +12,11 @@ const SkillsPage = () => {
 
   return (
     <div className="container-skills" id="skills">
-      <h1 className="skills__title">Skills</h1>
-      <div className="skills__list">
+      <h1 className="skills-title">Skills</h1>
+      <div className="skills-list">
         {skills.map((skill) => (
-            <div className="skills__item" key={skill.id}>
-              <span className="skills__item__name">{skill.title}</span>
+            <div className="skills-item" key={skill.id}>
+              <span className="skills-item-name">{skill.title}</span>
             </div>
           ))}
         <a

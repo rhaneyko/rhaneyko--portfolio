@@ -17,14 +17,6 @@
     },
     {
       "id": "3",
-      "title": "Search Item List",
-      "url": "https://firebasestorage.googleapis.com/v0/b/rhaneyko-portifolio.appspot.com/o/searchItemScreenshot.jpg?alt=media&token=a9af3d23-68a8-42ea-b712-353d24c4a3e0",
-      "description": "Search Item List criado com React, desenvolido com JavaScript, TypeScript e Styled Components.",
-      "liveSite": "https://searchitemlist.netlify.app/",
-      "github": "https://github.com/rhaneyko/search-list"
-    },
-    {
-      "id": "4",
       "title": "Twitter Profile Clone",
       "url": "https://firebasestorage.googleapis.com/v0/b/twitter-clone-546f0.appspot.com/o/twitterProfileCloneScreenshot.jpg?alt=media&token=456dbba4-2e48-4d6a-a372-9ec358f23368",
       "description": "Criado com React. Desenvolvido com TypeScript e Styled Components. Feito para simular a página de perfil do Twitter.",
@@ -33,10 +25,10 @@
     }, 
     {
       "id": "4",
-      "title": "Tooth Streaming",
-      "url": "https://firebasestorage.googleapis.com/v0/b/tooth-streaming.appspot.com/o/TMScreenshot.jpg?alt=media&token=8c392f71-dadc-41c0-a0e1-5d74d8ec4fab",
+      "title": "Fake Store",
+      "url": "https://firebasestorage.googleapis.com/v0/b/rhaneyko-portifolio.appspot.com/o/ProductPage.png?alt=media&token=c0103a3b-0b65-466e-8062-bb9826173691",
       "description": "Criado com React. Desenvolvido com TypeScript e Styled Components. Utilizei a API do The Movie Data Base para consumir os dados.",
-      "liveSite": "http://tooth-streaming.vercel.app/",
-      "github": "https://github.com/rhaneyko/tooth-streaming"
+      "liveSite": "https://project-fake-store.vercel.app/",
+      "github": "https://github.com/rhaneyko/fake-store"
     }
   ]

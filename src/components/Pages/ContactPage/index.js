@@ -1,35 +1,43 @@
 import React from "react";
+import { FaWhatsapp, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 import "./styles.css";
 
+const ContactSection = () => {
+  const handleWhatsApp = () => {
+    const phoneNumber = "+55992787669";
+    window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  };
 
-const ContactPage = () => {
+  const handleLinkedIn = () => {
+    const linkedInProfile = "https://www.linkedin.com/in/rhaneyko";
+    window.open(linkedInProfile, "_blank");
+  };
+
+  const handleEmail = () => {
+    const email = "rhaneykohonorio@gmail.com";
+    window.open(`mailto:${email}`, "_blank");
+  };
+
   return (
-    <div className="container__contactPage" id="contact">
-      <h1 className="contact__title">Contato</h1>
-      <div className="row input__container">
-        <div className="styled__input wide">
-          <input type="text" required />
-          <label>Nome</label>
+    <div className="contact-container" id="contact">
+      <h2>Entre em Contato</h2>
+      <div className="contact-icons">
+        <div className="icon" onClick={handleWhatsApp}>
+          <FaWhatsapp size={40} color="#25D366" />
+          <p>WhatsApp</p>
         </div>
-       
-        <div className="styled__input">
-          <input type="text" required />
-          <label>E-mail</label>
+        <div className="icon" onClick={handleLinkedIn}>
+          <FaLinkedin size={40} color="#0077B5" />
+          <p>LinkedIn</p>
         </div>
-        <div className="styled__input">
-          <input type="text" required />
-          <label>Telefone</label>
+        <div className="icon" onClick={handleEmail}>
+          <FaEnvelope size={40} color="#EA4335" />
+          <p>Email</p>
         </div>
-
-        <div class="styled__input wide">
-          <textarea required></textarea>
-          <label>Mensagem</label>
-        </div>
-        <button className="submit__button">Enviar</button>
       </div>
     </div>
   );
 };
 
-export default ContactPage;
+export default ContactSection;

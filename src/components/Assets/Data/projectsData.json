@@ -3,7 +3,7 @@
       "id": "1",
       "title": "Sistema de Validação",
       "url": "https://firebasestorage.googleapis.com/v0/b/signin-signup-auth-d7a7b.appspot.com/o/signin-signupScreenshot1.jpg?alt=media&token=c811cace-3676-4965-ac1f-4749f1bc4818",
-      "description": "Sistema de validação criado com React e usei TypeScript e para estilização utilizei Styled Components.",
+      "description": "Este projeto consiste em telas de login e registro com autenticação de usuários. Desenvolvido utilizando React para a construção da interface, TypeScript para tipagem estática e Styled Components para estilização. O sistema permite que os usuários criem contas e façam login de forma segura.",
       "liveSite": "https://sistemasvalidacao.netlify.app/",
       "github": "https://github.com/rhaneyko/signin-signup-auth"
     },
@@ -11,7 +11,7 @@
       "id": "2",
       "title": "To do List",
       "url": "https://firebasestorage.googleapis.com/v0/b/todolist-b2715.appspot.com/o/toDoScreenshot1.jpg?alt=media&token=01225d41-4337-4bd8-9f1e-4c1b13e479e1",
-      "description": "To do List criado com React, desenvolido com JavaScript, TypeScript e estilizado com Styled Components.",
+      "description": "Uma aplicação de lista de tarefas que permite aos usuários adicionar, editar e remover tarefas de forma eficiente. Construída com React para a interface dinâmica, TypeScript para assegurar a qualidade do código e Styled Components para uma estilização modular e escalável.",
       "liveSite": "https://todolistlivesite.netlify.app/",
       "github": "https://github.com/rhaneyko/to-do-list"
     },
@@ -19,7 +19,7 @@
       "id": "3",
       "title": "Twitter Profile Clone",
       "url": "https://firebasestorage.googleapis.com/v0/b/twitter-clone-546f0.appspot.com/o/twitterProfileCloneScreenshot.jpg?alt=media&token=456dbba4-2e48-4d6a-a372-9ec358f23368",
-      "description": "Criado com React. Desenvolvido com TypeScript e Styled Components. Feito para simular a página de perfil do Twitter.",
+      "description": "Este projeto é uma réplica da página de perfil do Twitter, desenvolvida para fins educacionais. Utiliza React para a construção da interface, TypeScript para tipagem estática e Styled Components para estilização. O clone busca reproduzir fielmente o layout e a funcionalidade do perfil do Twitter.",
       "liveSite": "https://twitterprofileclone.netlify.app/",
       "github": "https://github.com/rhaneyko/twitter-profile-clone"
     }, 
@@ -27,7 +27,7 @@
       "id": "4",
       "title": "Fake Store",
       "url": "https://firebasestorage.googleapis.com/v0/b/rhaneyko-portifolio.appspot.com/o/ProductPage.png?alt=media&token=c0103a3b-0b65-466e-8062-bb9826173691",
-      "description": "Criado com React. Desenvolvido com TypeScript e Styled Components. Utilizei a API do The Movie Data Base para consumir os dados.",
+      "description": "Uma aplicação de e-commerce simulada, permitindo que os usuários naveguem por produtos, visualizem detalhes e adicionem itens ao carrinho de compras. Desenvolvida com React para a interface do usuário, TypeScript para tipagem estática e Styled Components para estilização. Este projeto foi criado para fins de estudo e demonstração de habilidades em desenvolvimento web.",
       "liveSite": "https://project-fake-store.vercel.app/",
       "github": "https://github.com/rhaneyko/fake-store"
     }

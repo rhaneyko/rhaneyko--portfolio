@@ -20,7 +20,7 @@ const SkillsPage = () => {
             </div>
           ))}
         <a
-          href="https://www.linkedin.com/in/rhaneyko-honorio-73657819b/details/certifications/"
+          href="https://www.linkedin.com/in/rhaneyko/details/certifications/"
           className="skills-certifications"
         >
           Ver certificações

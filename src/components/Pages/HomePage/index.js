@@ -19,7 +19,7 @@ const HomePage = () => {
     <div className="container__homepage" id="home">
       <div className="greetings">
         <span className="greetings__text">Olá,</span>
-        <span className="greetings__text">Me chamo Rhaneyko.</span>
+        <span className="greetings__text">Me chamo Gabriel Franco.</span>
         <span className="greetings__role">Desenvolvedor Frontend</span>
 
         <div className="buttons">
